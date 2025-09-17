@@ -1,4 +1,4 @@
-// import { FaPython, FaReact, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import { FaPython, FaReact, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
 // import {
 //     SiDjango,
 //     SiFastapi,

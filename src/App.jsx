@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skill from "./components/Skill";
@@ -7,7 +8,8 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-50">
+    <div className="bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <Skill />

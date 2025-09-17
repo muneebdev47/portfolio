@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile.png"; // adjust filename if different
+import profileImg from "../assets/profile.png";
+import { FaDownload, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -31,25 +32,34 @@ export default function Hero() {
         <div className="mt-6 flex space-x-4 justify-center md:justify-start">
           <a
             href="mailto:mmuneeb2807@gmail.com"
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+            className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
           >
-            Mail Me
+            <FaEnvelope className="mr-2 text-lg" /> Mail Me
           </a>
+
           <a
             href="https://github.com/muneebdev47"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-gray-400 text-white rounded-lg shadow hover:bg-gray-900"
+            className="flex items-center px-4 py-2 bg-gray-400 text-white rounded-lg shadow hover:bg-[#004182] transition"
           >
-            GitHub
+            <FaGithub className="mr-2 text-xl" /> Github
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-muneeb-naeem-109ab6231/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-[#0866C2] text-white rounded-lg shadow hover:bg-gray-900"
+            className="flex items-center px-4 py-2 bg-[#0866C2] text-white rounded-lg shadow hover:bg-[#004182] transition"
           >
-            LinkedIn
+            <FaLinkedin className="mr-2 text-xl" /> LinkedIn
+          </a>
+          {/* Download CV */}
+          <a
+            href="/Muhammad-Muneeb-CV.pdf"
+            download
+            className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700"
+          >
+            <FaDownload className="mr-2" /> Download CV
           </a>
         </div>
       </div>
